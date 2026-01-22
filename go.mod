@@ -1,14 +1,14 @@
 module ucp-proxy
 
-go 1.24
+go 1.24.0
 
 require (
 	cloud.google.com/go/secretmanager v1.14.2
 	github.com/dunglas/httpsfv v1.1.0
 	github.com/modelcontextprotocol/go-sdk v1.2.0
 	github.com/refraction-networking/utls v1.8.1
-	golang.org/x/mod v0.17.0
-	golang.org/x/net v0.38.0
+	golang.org/x/mod v0.29.0
+	golang.org/x/net v0.47.0
 )
 
 require (
@@ -33,11 +33,11 @@ require (
 	go.opentelemetry.io/otel v1.29.0 // indirect
 	go.opentelemetry.io/otel/metric v1.29.0 // indirect
 	go.opentelemetry.io/otel/trace v1.29.0 // indirect
-	golang.org/x/crypto v0.36.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/oauth2 v0.30.0 // indirect
-	golang.org/x/sync v0.12.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
-	golang.org/x/text v0.23.0 // indirect
+	golang.org/x/sync v0.18.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	golang.org/x/time v0.8.0 // indirect
 	google.golang.org/api v0.210.0 // indirect
 	google.golang.org/genproto v0.0.0-20241118233622-e639e219e697 // indirect
