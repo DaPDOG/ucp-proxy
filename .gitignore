@@ -1,0 +1,57 @@
+# Binaries
+ucpclient
+/proxy
+/demo
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test artifacts
+*.test
+*.out
+coverage.html
+coverage.txt
+*.coverprofile
+
+# Go workspace
+go.work
+go.work.sum
+
+# Dependency directories (if vendoring)
+/vendor/
+/local/
+
+# IDE / Editor
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.*.swp
+tags
+TAGS
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Local config / secrets
+.env
+.env.local
+*.local.json
+secrets/
+
+# Build output
+/bin/
+/dist/
+/out/
+
+# Debug
+__debug_bin*
+debug.test

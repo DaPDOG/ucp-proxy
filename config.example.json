@@ -1,0 +1,64 @@
+{
+  "_comment": "Copy to config.local.json and fill in your credentials",
+  "port": "8080",
+  "environment": "development",
+  "log_level": "debug",
+
+  "_adapter_options": "woocommerce | wix",
+  "adapter_type": "woocommerce",
+  "merchant_id": "my-store",
+
+  "merchant": {
+    "store_url": "https://your-store.example.com",
+    "merchant_name": "My Store",
+
+    "_woocommerce_fields": "Required for adapter_type: woocommerce",
+    "api_key": "ck_...",
+    "api_secret": "cs_...",
+
+    "_wix_fields": "Required for adapter_type: wix",
+    "wix_client_id": "your-oauth-client-id",
+
+    "policy_links": {
+      "privacy_policy": "https://your-store.example.com/privacy",
+      "terms_of_service": "https://your-store.example.com/terms"
+    },
+
+    "_payment_handlers_comment": "Optional: Payment handlers for programmatic checkout. Omit to always escalate to browser.",
+    "payment_handlers": {
+      "com.google.pay": [{
+        "id": "gpay-checkout",
+        "version": "2026-01-11",
+        "spec": "https://ucp.dev/handlers/google.pay",
+        "schema": "https://ucp.dev/schemas/handlers/google.pay.handler.json",
+        "config": {
+          "allowed_payment_methods": [{
+            "type": "CARD",
+            "parameters": {
+              "allowed_auth_methods": ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+              "allowed_card_networks": ["VISA", "MASTERCARD", "AMEX", "DISCOVER"]
+            },
+            "tokenization_specification": {
+              "type": "PAYMENT_GATEWAY",
+              "parameters": {
+                "gateway": "stripe",
+                "stripe:version": "2020-08-27",
+                "stripe:publishableKey": "pk_test_..."
+              }
+            }
+          }]
+        }
+      }],
+      "com.braintreepayments": [{
+        "id": "braintree-card",
+        "version": "2026-01-11",
+        "spec": "https://ucp.dev/handlers/braintree.card",
+        "schema": "https://ucp.dev/schemas/handlers/braintree.card.handler.json",
+        "config": {
+          "tokenization_key": "sandbox_..._merchantid",
+          "environment": "sandbox"
+        }
+      }]
+    }
+  }
+}

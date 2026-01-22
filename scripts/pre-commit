@@ -1,0 +1,15 @@
+#!/bin/sh
+# Git pre-commit hook for Go formatting
+# Install: make install-hooks
+
+# Check for unformatted Go files
+UNFORMATTED=$(gofmt -l .)
+if [ -n "$UNFORMATTED" ]; then
+    echo "Go files not formatted:"
+    echo "$UNFORMATTED"
+    echo ""
+    echo "Run 'make fmt' to fix"
+    exit 1
+fi
+
+exit 0
